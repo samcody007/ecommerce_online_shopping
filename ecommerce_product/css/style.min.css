@@ -1,0 +1,1052 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  background-color: #F2F2F2;
+}
+body header {
+  width: 100%;
+  height: 85px;
+  margin-top: 43px;
+}
+body header .header_content {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body header .header_content .header_sections {
+  height: 26px;
+  display: flex;
+  column-gap: 32px;
+}
+body header .header_content .header_sections .header-burger {
+  display: none;
+  padding: 0 16px;
+}
+body header .header_content .header_sections .burger-of-modal {
+  display: none;
+  width: 70%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 55;
+  padding: 25px;
+}
+body header .header_content .header_sections .burger-of-modal .burger-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  color: #69707D;
+  font-size: 20px;
+  font-weight: 900;
+}
+body header .header_content .header_sections .burger-of-modal nav {
+  margin-top: 50px;
+}
+body header .header_content .header_sections .burger-of-modal ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  list-style: none;
+}
+body header .header_content .header_sections .burger-of-modal ul a {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #1D2026;
+}
+body header .header_content .header_sections .header-pages nav ul {
+  width: 397px;
+  height: 26px;
+  display: flex;
+  column-gap: 32px;
+}
+body header .header_content .header_sections .header-pages nav ul li {
+  height: 73px;
+  list-style: none;
+}
+body header .header_content .header_sections .header-pages nav ul li a {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #69707D;
+  text-decoration: none;
+}
+body header .header_content .header_sections .header-pages nav ul li:hover {
+  border-bottom: 4px solid #FF7E1B;
+  cursor: pointer;
+}
+body header .header_content .header_icons {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+body header .header_content .header_icons .recycle {
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+body header .header_content .header_icons .notification {
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 19px;
+  height: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 10px;
+  background-color: #FF7E1B;
+  border-radius: 6.5px;
+  color: #FFFFFF;
+}
+body header .header_content .header_icons .customer {
+  width: 50px;
+  height: 50px;
+  margin-left: 46px;
+}
+body header .header_content .header_icons .customer img {
+  width: 50px;
+  height: 50px;
+}
+body header .header_content .header_icons .customer img:hover {
+  border: 2px solid #FF7E1B;
+  border-radius: 100%;
+}
+body .header-line {
+  width: 1110px;
+  height: 1px;
+  margin-top: 16px;
+  background-color: #E4E9F2;
+}
+body main {
+  width: 100%;
+}
+body main .main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px;
+  padding: 0 48px;
+  row-gap: 32px;
+}
+body main .main-content .main-sneakers {
+  display: none;
+}
+body main .main-content .main-sneakers img {
+  width: 445px;
+  height: 445px;
+  cursor: pointer;
+}
+body main .main-content .main-sneakers.active-sneaker {
+  display: flex;
+}
+body main .main-content .sneakers-types {
+  width: 100%;
+  height: 88px;
+  display: flex;
+  column-gap: 31px;
+}
+body main .main-content .sneakers-types .chosen-sneaker {
+  width: 88px;
+  height: 88px;
+  color: inherit;
+  cursor: pointer;
+  border: none;
+  margin-top: 32px;
+}
+body main .main-content .sneakers-types .chosen-sneaker img {
+  width: 88px;
+  height: 88px;
+}
+body main .main-content .sneakers-types .chosen-sneaker img:hover {
+  opacity: 0.5;
+}
+body main .main-content .sneakers-types .chosen-sneaker img:first-child {
+  border-radius: 10px;
+}
+body main .main-content aside .aside-content {
+  width: 445px;
+  display: flex;
+  flex-direction: column;
+}
+body main .main-content aside .aside-content .company {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FF7E1B;
+  padding-top: 62px;
+  padding-bottom: 27px;
+}
+body main .main-content aside .aside-content h1 {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 48px;
+  color: #1D2026;
+  padding-bottom: 32px;
+}
+body main .main-content aside .aside-content p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #69707D;
+  padding-bottom: 28px;
+}
+body main .main-content aside .aside-content .counter {
+  width: 100%;
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main .main-content aside .aside-content .counter .price {
+  width: 173px;
+}
+body main .main-content aside .aside-content .counter .price .current-price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+body main .main-content aside .aside-content .counter .price .current-price h4 {
+  font-weight: 700;
+  font-size: 28px;
+  color: #1D2026;
+}
+body main .main-content aside .aside-content .counter .price .current-price p {
+  height: 28px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  background-color: #FFEEE2;
+  border-radius: 6px;
+  color: #FF7E1B;
+}
+body main .main-content aside .aside-content .counter .price .old-price p {
+  font-size: 16px;
+  line-height: 26px;
+  text-decoration-line: line-through;
+  color: #B6BCC8;
+  padding-top: 5px;
+}
+body main .main-content aside .aside-content .counter .timeline {
+  width: 167px;
+  height: 27px;
+  display: flex;
+  column-gap: 3px;
+}
+body main .main-content aside .aside-content .counter .timeline .textday, body main .main-content aside .aside-content .counter .timeline .texthours, body main .main-content aside .aside-content .counter .timeline .textminutes, body main .main-content aside .aside-content .counter .timeline .textseconds {
+  width: 35px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #FF7E1B;
+  background: #FFEEE2;
+  border-radius: 6px;
+}
+body main .main-content aside .aside-content .counted-product {
+  width: 445px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+body main .main-content aside .aside-content .counted-product .counting {
+  width: 157px;
+  height: 56px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 700;
+  background: #F6F8FD;
+  border-radius: 10px;
+}
+body main .main-content aside .aside-content .counted-product .counting .inc, body main .main-content aside .aside-content .counted-product .counting .dec {
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  text-align: center;
+  color: #FF7E1B;
+  user-select: none;
+}
+body main .main-content aside .aside-content .counted-product .counting .number {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  color: #1D2026;
+}
+body main .main-content aside .aside-content .counted-product button {
+  width: 272px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FF7E1B;
+  box-shadow: 0px 20px 50px -20px #FF7E1B;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+body main .main-content aside .aside-content .counted-product button p {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 0;
+  padding-left: 16px;
+}
+body main .main-content aside .aside-content .counted-product button:hover {
+  background: #FFAB6A;
+}
+body main .modal-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 90px;
+  row-gap: 24px;
+  z-index: 1;
+}
+body main .modal-content .modal-header {
+  width: 550px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background-color: inherit;
+  color: #000;
+}
+body main .modal-content .modal-header .close-button {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  font-size: 28px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  border: none;
+  z-index: 1;
+}
+body main .modal-content .modal-header .close-button svg path:hover {
+  fill: #FF7E1B;
+}
+body main .modal-content .slide-tab-button {
+  width: 500px;
+  height: 88px;
+  display: flex;
+  column-gap: 31px;
+  border: none;
+  margin-left: 15px;
+}
+body main .modal-content .slide-tab-button .chosen-sneaker2 {
+  border: none;
+  border-radius: 15px;
+  padding-left: 10px;
+}
+body main .modal-content .slide-tab-button .chosen-sneaker2.active {
+  opacity: 0.25;
+}
+body main .modal-content .slide-tab-button img {
+  width: 88px;
+  height: 88px;
+  cursor: pointer;
+}
+body main .modal-content .slide-tab-button img:first-child {
+  border-radius: 10px;
+}
+body main .modal-content .slide-tab-button img:hover {
+  opacity: 0.5;
+}
+body main .modal-content .slider {
+  width: 606px;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+body main .modal-content .slider .slider__in {
+  display: flex;
+  width: 550px;
+  height: 100%;
+  overflow: hidden;
+}
+body main .modal-content .slider .slider__in .slide-image {
+  display: flex;
+  width: max-content;
+  transition: 0.5s;
+}
+body main .modal-content .slider .slider__in .slide-image .slide {
+  width: 550px;
+  height: 550px;
+}
+body main .modal-content .slider .slider__in .slide-image .slide img {
+  width: 550px;
+  height: 550px;
+}
+body main .modal-content .slider .slider__in .slide-image .slide.active-sneaker {
+  display: block;
+}
+body main .modal-content .slider svg path:hover {
+  stroke: #FF7E1B;
+}
+body main .modal-content .slider .slide-to-left, body main .modal-content .slider .slide-to-right {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  background: #FFFFFF;
+  z-index: 1;
+  cursor: pointer;
+}
+body main .modal-content .slider .slide-to-left {
+  margin-right: -28px;
+}
+body main .modal-content .slider .slide-to-right {
+  margin-left: -28px;
+}
+body main .phone {
+  width: 100%;
+  height: 300px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+body main .phone #leftButton {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  font-size: 48px;
+  cursor: pointer;
+  z-index: 999;
+  border-radius: 50%;
+  margin-right: -56px;
+}
+body main .phone #rightButton {
+  font-size: 48px;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  margin-left: -56px;
+}
+body main .phone #phone-slider {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 300px;
+}
+body main .phone #phone-slider .slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+body main .phone #phone-slider .slide img {
+  width: 100%;
+  height: 300px;
+}
+body main .phone #phone-slider .slide.active {
+  opacity: 1;
+}
+body .overall {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0.75;
+  background-color: #000;
+}
+body .adding-card {
+  width: 360px;
+  height: 256px;
+  background: #fff;
+  box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+  border-radius: 10px;
+  position: absolute;
+  top: 13%;
+  right: 14%;
+  display: none;
+}
+body .adding-card .card-letter {
+  color: #1D2026;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 24px 24px;
+}
+body .adding-card .underline {
+  width: 100%;
+  height: 1px;
+  background: #E4E9F2;
+}
+body .adding-card .card-checkout {
+  padding: 25px 24px;
+  display: none;
+}
+body .adding-card .card-checkout .added-price {
+  display: flex;
+  margin-bottom: 24px;
+  gap: 15px;
+}
+body .adding-card .card-checkout .added-price .price-count p {
+  font-weight: 400;
+  line-height: 26px;
+  color: #69707D;
+}
+body .adding-card .card-checkout .added-price .price-count .product-price {
+  display: flex;
+}
+body .adding-card .card-checkout .added-price .price-count .product-price .const {
+  font-weight: 400;
+  line-height: 26px;
+  color: #69707D;
+}
+body .adding-card .card-checkout .added-price .price-count .product-price span {
+  font-weight: 700;
+  line-height: 26px;
+  color: #1D2026;
+  padding-left: 6px;
+}
+body .adding-card .card-checkout .added-price .remove {
+  margin-top: 15px;
+  cursor: pointer;
+}
+body .adding-card .card-checkout .checking {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #FF7E1B;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+body .adding-card .empty {
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #69707D;
+  padding-top: 77px;
+}
+body .hidden-check {
+  display: none;
+}
+body .burger-section {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  width: 250px;
+  height: 900px;
+  padding: 25px 25px;
+  display: none;
+}
+body .burger-section .burger-remove {
+  margin-bottom: 53px;
+}
+body .burger-section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+body .burger-section ul li {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #1D2026;
+}
+@media only screen and (min-width: 861px) and (max-width: 1200px) {
+  body header {
+    margin: 0;
+  }
+  body header .header_content {
+    width: 100%;
+    padding: 0 80px;
+  }
+  body header .header_content .header_sections {
+    column-gap: 0;
+  }
+  body header .header_content .header_sections .header-pages nav ul {
+    display: flex;
+    padding-left: 56px;
+  }
+  body main .main-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  body main .main-content .main-menu .main-sneakers.active-sneaker {
+    overflow: hidden;
+  }
+  body main .main-content .main-menu .main-sneakers.active-sneaker img {
+    display: block;
+  }
+  body main .main-content aside .aside-content {
+    width: 100%;
+  }
+  body main .main-content aside .aside-content .company {
+    font-size: 18px;
+  }
+  body main .main-content aside .aside-content .company span {
+    padding: 0 24px;
+  }
+  body main .main-content aside .aside-content h1 {
+    font-size: 33px;
+    line-height: 32px;
+    padding: 0 24px;
+    margin-bottom: 15px;
+  }
+  body main .main-content aside .aside-content p {
+    font-size: 18px;
+    padding: 0 24px;
+    padding-bottom: 24px;
+  }
+  body main .main-content aside .aside-content .counter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 20px;
+  }
+  body main .main-content aside .aside-content .counter .timeline {
+    margin-bottom: 28px;
+  }
+  body main .main-content aside .aside-content .counter .timeline .textday, body main .main-content aside .aside-content .counter .timeline .texthours, body main .main-content aside .aside-content .counter .timeline .textminutes, body main .main-content aside .aside-content .counter .timeline .textseconds {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #FF7E1B;
+    background: #FFEEE2;
+    border-radius: 6px;
+  }
+  body main .main-content aside .aside-content .counter .timeline span {
+    font-size: 30px;
+  }
+  body main .main-content aside .aside-content .counter .price {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: space-between;
+  }
+  body main .main-content aside .aside-content .counter .price .current-price {
+    width: 178px;
+  }
+  body main .main-content aside .aside-content .counter .price .current-price h4 {
+    font-size: 36px;
+  }
+  body main .main-content aside .aside-content .counter .price .current-price p {
+    font-size: 24px;
+  }
+  body main .main-content aside .aside-content .counter .price .old-price p {
+    font-size: 24px;
+    padding: 0;
+  }
+  body main .main-content aside .aside-content .counted-product {
+    width: 100%;
+    display: flex;
+    padding: 0 24px;
+  }
+  body main .main-content aside .aside-content .counted-product span {
+    font-size: 48px;
+  }
+  body main .main-content aside .aside-content .counted-product .inc {
+    font-size: 48px;
+  }
+  body main .main-content aside .aside-content .counted-product .order {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 37px;
+  }
+  body main .main-content aside .aside-content .counted-product .counting {
+    width: 45%;
+    height: 56px;
+    display: flex;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (min-width: 678px) and (max-width: 860px) {
+  body .container {
+    max-width: 100%;
+  }
+  body .adding-card {
+    width: 360px;
+    height: 256px;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+  }
+  body .adding-card .card-checkout {
+    width: 100%;
+  }
+  body .adding-card .card-checkout .added-price {
+    width: 100%;
+  }
+  body .adding-card .card-checkout .added-price .addedImg img {
+    width: 80px;
+    height: 80px;
+  }
+  body .adding-card .card-checkout .added-price .price-count {
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+  }
+  body .adding-card .card-checkout .added-price .price-count .const, body .adding-card .card-checkout .added-price .price-count span {
+    font-size: 20px;
+  }
+  body .adding-card .card-checkout .added-price .remove img {
+    width: 30px;
+    height: 30px;
+  }
+  body .adding-card .card-checkout .checking {
+    width: 100%;
+  }
+  body header {
+    margin: 0;
+  }
+  body header .header_content {
+    width: 100%;
+    padding: 0 32px;
+  }
+  body header .header_content .header_sections {
+    column-gap: 0;
+  }
+  body header .header_content .header_sections .header-pages nav ul {
+    display: flex;
+    padding-left: 56px;
+  }
+  body main .main-content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    padding: 0;
+    margin: 0;
+  }
+  body main .main-content .main-menu {
+    width: 100%;
+  }
+  body main .main-content .main-menu .main-sneakers.active-sneaker {
+    width: 100%;
+  }
+  body main .main-content .main-menu .main-sneakers.active-sneaker img {
+    width: 100%;
+    display: block;
+    height: 550px;
+  }
+  body main .main-content .main-menu .sneakers-types {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    column-gap: 80px;
+  }
+  body main .main-content .main-menu .sneakers-types img {
+    width: 120px;
+    height: 120px;
+  }
+  body main .main-content aside .aside-content {
+    width: 100%;
+  }
+  body main .main-content aside .aside-content .company {
+    padding: 0;
+    margin-bottom: 19px;
+    font-size: 18px;
+  }
+  body main .main-content aside .aside-content .company span {
+    padding: 0 24px;
+  }
+  body main .main-content aside .aside-content h1 {
+    font-size: 33px;
+    line-height: 32px;
+    padding: 0 24px;
+    margin-bottom: 15px;
+  }
+  body main .main-content aside .aside-content p {
+    font-size: 18px;
+    padding: 0 24px;
+    padding-bottom: 24px;
+  }
+  body main .main-content aside .aside-content .counter {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    margin-top: 20px;
+  }
+  body main .main-content aside .aside-content .counter .timeline {
+    margin-bottom: 28px;
+  }
+  body main .main-content aside .aside-content .counter .timeline .textday, body main .main-content aside .aside-content .counter .timeline .texthours, body main .main-content aside .aside-content .counter .timeline .textminutes, body main .main-content aside .aside-content .counter .timeline .textseconds {
+    width: 100px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    color: #FF7E1B;
+    background: #FFEEE2;
+    border-radius: 6px;
+  }
+  body main .main-content aside .aside-content .counter .timeline span {
+    font-size: 30px;
+  }
+  body main .main-content aside .aside-content .counter .price {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    justify-content: space-between;
+  }
+  body main .main-content aside .aside-content .counter .price .current-price {
+    width: 178px;
+  }
+  body main .main-content aside .aside-content .counter .price .current-price h4 {
+    font-size: 36px;
+  }
+  body main .main-content aside .aside-content .counter .price .current-price p {
+    font-size: 24px;
+  }
+  body main .main-content aside .aside-content .counter .price .old-price p {
+    font-size: 24px;
+    padding: 0;
+  }
+  body main .main-content aside .aside-content .counted-product {
+    width: 100%;
+    display: flex;
+    padding: 0 24px;
+  }
+  body main .main-content aside .aside-content .counted-product span {
+    font-size: 48px;
+  }
+  body main .main-content aside .aside-content .counted-product .inc {
+    font-size: 48px;
+  }
+  body main .main-content aside .aside-content .counted-product .order {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 37px;
+  }
+  body main .main-content aside .aside-content .counted-product .counting {
+    width: 45%;
+    height: 56px;
+    display: flex;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 677px) {
+  body .container {
+    max-width: 100%;
+  }
+  body .overall {
+    z-index: 1;
+  }
+  body .cover {
+    width: 100%;
+  }
+  body .adding-card {
+    max-width: 320px;
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    z-index: 9999;
+    padding: 0;
+    margin: 0;
+  }
+  body header {
+    margin: 0;
+  }
+  body header .header_content {
+    width: 100%;
+    border-bottom: 0;
+  }
+  body header .header_content .header_sections {
+    column-gap: 0;
+  }
+  body header .header_content .header_sections .header-burger {
+    display: block;
+  }
+  body header .header_content .header_sections .burger-of-modal {
+    width: 66%;
+  }
+  body header .header_content .header_sections .burger-of-modal .burger-content nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  body header .header_content .header_sections .header-pages nav ul {
+    display: none;
+  }
+  body header .header_content .header_icons {
+    height: 24px;
+    display: flex;
+  }
+  body header .header_content .header_icons .notification {
+    position: absolute;
+    top: -4px;
+    left: 8px;
+  }
+  body header .header_content .header_icons .customer {
+    width: 24px;
+    height: 24px;
+    margin-left: 22px;
+    margin-right: 24px;
+  }
+  body header .header_content .header_icons .customer img {
+    width: 24px;
+    height: 24px;
+  }
+  body .header-line {
+    color: inherit;
+  }
+  body main .main-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  body main .main-content .main-menu .main-sneakers {
+    opacity: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  body main .main-content .main-menu .main-sneakers img {
+    width: 100%;
+    display: block;
+    height: 300px;
+  }
+  body main .main-content .main-menu .sneakers-types {
+    display: none;
+  }
+  body main .main-content aside .aside-content {
+    width: 100%;
+  }
+  body main .main-content aside .aside-content .company {
+    padding: 0;
+    margin-bottom: 19px;
+  }
+  body main .main-content aside .aside-content .company span {
+    padding: 0 24px;
+  }
+  body main .main-content aside .aside-content h1 {
+    font-size: 28px;
+    line-height: 32px;
+    padding: 0 24px;
+    margin-bottom: 15px;
+  }
+  body main .main-content aside .aside-content p {
+    padding: 0 24px;
+    padding-bottom: 24px;
+  }
+  body main .main-content aside .aside-content .counter {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+  body main .main-content aside .aside-content .counter .timeline {
+    margin-bottom: 28px;
+  }
+  body main .main-content aside .aside-content .counter .price {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+  }
+  body main .main-content aside .aside-content .counter .price .current-price {
+    width: 178px;
+  }
+  body main .main-content aside .aside-content .counter .price .old-price {
+    padding: 0;
+  }
+  body main .main-content aside .aside-content .counter .price:nth-child(2) {
+    display: flex;
+    justify-content: flex-end;
+  }
+  body main .main-content aside .aside-content .counted-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+  }
+  body main .main-content aside .aside-content .counted-product .order {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 37px;
+  }
+  body main .main-content aside .aside-content .counted-product .counting {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    margin-top: 27px;
+    margin-bottom: 16px;
+  }
+  body main .phone {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+  }
+}/*# sourceMappingURL=style.min.css.map */
